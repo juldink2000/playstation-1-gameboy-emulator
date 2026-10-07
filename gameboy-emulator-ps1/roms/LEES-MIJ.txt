@@ -1,0 +1,2 @@
+Zet hier je eigen Pokemon Red ROM als POKEMONR.GB (1 MiB).
+Zet je Peanut-GB v1.3.0 peanut_gb.h in ../src/peanut_gb.h.

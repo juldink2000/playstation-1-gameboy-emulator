@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<iso_project>
+        <track type="data">
+                <identifiers
+                        system        ="PLAYSTATION"
+                        volume        ="GBPS1"
+                        volume_set    ="GBPS1"
+                        publisher     ="HOMEBREW"
+                        data_preparer ="PSN00BSDK ${PSN00BSDK_VERSION}"
+                        application   ="PLAYSTATION"
+                />
+
+                <directory_tree>
+                        <file name="SYSTEM.CNF"   type="data" source="${PROJECT_SOURCE_DIR}/system.cnf" />
+                        <file name="GBPS1.EXE"    type="data" source="gbps1.exe" />
+${GB_ROM_ENTRIES}
+                        <dummy sectors="1024"/>
+                </directory_tree>
+        </track>
+</iso_project>
