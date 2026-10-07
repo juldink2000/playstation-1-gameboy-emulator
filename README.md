@@ -30,3 +30,25 @@ Make sure the ROM is placed in the correct folder before building.
 The emulator is still in early development, so some games may not work correctly.
 Performance is currently limited to around 20 FPS and the frame rate is not stable.
 There is currently no sound.
+
+Adding a Game
+
+To add a new Game Boy game, place the .gb ROM in the location used by the emulator.
+
+After adding the ROM, rebuild the project:
+
+taskkill /f /im duckstation-qt-x64-ReleaseLTCG.exe
+cmake -S . -B build
+del build\gbps1.bin
+cmake --build build
+
+The new gbps1.bin will then be created in the build folder.
+
+You can test it in DuckStation or burn the resulting .bin/.cue files to a CD-R and run it on a real PlayStation 1.
+
+Notes
+The ROM must be a Game Boy .gb file.
+The emulator is still in early development.
+There is currently no sound.
+Performance is currently around 20 FPS at best and the frame rate is not stable.
+Some Game Boy games may not work correctly yet.
